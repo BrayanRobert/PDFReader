@@ -50,4 +50,8 @@ def buscar_palavras():
     return ranking
 
 
+@app.route('/', methods=['GET'])
+def ola():
+    return 'Ola, esse servidor está rodando'
+
 app.run(debug=True)
